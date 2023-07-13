@@ -1,9 +1,33 @@
 spring:
+  application:
+    name: streamhub-tvshow
   security:
     oauth2:
       resourceserver:
         jwt:
           jwk-set-uri: http://localhost:8080/realms/My-Realm/protocol/openid-connect/certs
+  cloud:
+    loadbalancer:
+      ribbon:
+        enabled: false
 
 server:
   port: 9191
+
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+  endpoint:
+    health:
+      show-details: always
+
+
+logging:
+  level:
+    root: INFO
+    br.com.dmsec.streamhub.tvshow: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+    org.springframework.security: TRACE

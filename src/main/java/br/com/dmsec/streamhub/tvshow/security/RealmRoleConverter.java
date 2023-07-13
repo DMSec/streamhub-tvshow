@@ -1,4 +1,4 @@
-package br.com.dmsec.tvshow.security;
+package br.com.dmsec.streamhub.tvshow.security;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.security.core.GrantedAuthority;

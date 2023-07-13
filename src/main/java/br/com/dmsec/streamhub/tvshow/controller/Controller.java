@@ -1,4 +1,4 @@
-package br.com.dmsec.tvshow.controller;
+package br.com.dmsec.streamhub.tvshow.controller;
 
 import jakarta.annotation.security.RolesAllowed;
 import java.security.Principal;
